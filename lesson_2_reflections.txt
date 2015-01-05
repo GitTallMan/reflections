@@ -18,3 +18,12 @@ a. User's friend asks to go ahead with the modifications:
 b.	User's friend asks to discard the modifications as it is irrelevent:
 	Then user unstages the already staged file and as he hasn't yet committed it, he can freash start again from scratch and do relevent modifications.
 The distinction between modified, staged and commited files certainly offer many advantages.
+
+Que: How can you use the staging area to make sure you have one commit per logical change?
+
+Ans: Most of the times, we kind of seclude a part of code that does/relates to one functionality from the rest in a separate file, e.g., all helper methods put into a separate helper class, all classes related to one module is organised into one file, a main class, etc.
+Using "git status", "git diff", "git diff --staged" and "git diff commit-id1 commit-id2", we can check the status and the differences of files before each commit in working directory, staging area and the previous commit.
+If there are more than one files present that is untracked, modified or about to be committed, then that is an indication that we are about to commit more than one logical change at a time. If that is the case, we can unstage all the files from the staging area except one and commit, stage and commit all the other files that are logically separate.
+Staging area acts as an intermediary between actual working directory and local repositary.
+
+
