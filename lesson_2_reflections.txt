@@ -26,4 +26,9 @@ Using "git status", "git diff", "git diff --staged" and "git diff commit-id1 com
 If there are more than one files present that is untracked, modified or about to be committed, then that is an indication that we are about to commit more than one logical change at a time. If that is the case, we can unstage all the files from the staging area except one and commit, stage and commit all the other files that are logically separate.
 Staging area acts as an intermediary between actual working directory and local repositary.
 
+Que: What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
+Ans: 1. When experimenting on code and not beiig sure if the code really works.
+	 2. When introducing newer features such as Internationalisation and Localisation.
+	 3. When using the same base code to introduce different features that are separate from one another.
+	 Branches certainly help by introducing fair distinction between one set of program files with the other.
