@@ -32,3 +32,9 @@ Ans: 1. When experimenting on code and not beiig sure if the code really works.
 	 2. When introducing newer features such as Internationalisation and Localisation.
 	 3. When using the same base code to introduce different features that are separate from one another.
 	 Branches certainly help by introducing fair distinction between one set of program files with the other.
+
+Que: How do the diagrams help you visualize the branch structure?
+
+Ans: If a commit is in a particular branch, using diagrams, we can easily trace from the latest commit in the branch to the root commit that has no other parent commit. That way, if there are any unreachable commits that are streched out from any of the intermediary commits, without branching, we can easily identify (which all commits are reachable and which all commits aren't) them.
+
+Que: 
