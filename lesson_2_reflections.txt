@@ -37,4 +37,18 @@ Que: How do the diagrams help you visualize the branch structure?
 
 Ans: If a commit is in a particular branch, using diagrams, we can easily trace from the latest commit in the branch to the root commit that has no other parent commit. That way, if there are any unreachable commits that are streched out from any of the intermediary commits, without branching, we can easily identify (which all commits are reachable and which all commits aren't) them.
 
+Que: What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Ans: Suppose 'branch1' and 'branch2' are to be merged and currently checked out branch is 'branch1'. The command "git merge branch1 branch2" or "git merge branch2" merges branch2 with branch1 and the tip of the merged branches is named 'branch1'. We may chose to delete the name given to the latest commit of 'branch2' (i.e., 'branch2' itself).
+The resulting tip of this merge (the latest master commit) does
+	1. contain all the code that were added to the existing code in both branches 'branch1' and 'branch2'.
+	2. not contain the code that were deleted from the common parent of the two branches.
+What does the resulting merge in below scenario yeild?
+	If 'A' is the code that existed in the common parent commit of both the branches and suppose 'A' is deleted in 'branch1' and retained in 'branch2'.
+	For the successive commits to work properly in 'branch1', 'A' should not be present in the code.
+	For the successive commits in 'branch2' to work properly, 'A' should be present in the code.
+	Isn't it obvious that only the features of either 'branch1' or 'branch2' work in the final master commit depending on whose commit is the latest?
+
+	Diagrammatical representation gives us a clear picture of what commits were made in what branch.
+
 Que: 
