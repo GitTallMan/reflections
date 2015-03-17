@@ -51,4 +51,14 @@ What does the resulting merge in below scenario yeild?
 
 	Diagrammatical representation gives us a clear picture of what commits were made in what branch.
 
-Que: 
+Que: What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Ans: Automatic merging and proper funcioning of merged code (No compilation and run time errors) implies that the merge algorithm of Git is brilliant.
+No matter how brilliant the merge algorithm is, sometimes, automatic merging may yield improper results (with or without compilation and run time erraneous code) for some conflicts that arise during merges (See P.S.). In such situations, it is always better to resolve the conflicts manually and proceed with the rest of the merge process. I think, Git's way of using mixed automatic and manual conflict resolution is very good.
+
+P.S.:
+What does the resulting merge in below scenario yeild?
+	If 'A' is the code that existed in the common parent commit of both the branches and suppose 'A' is deleted in 'branch1' and retained in 'branch2'.
+	For the successive commits to work properly in 'branch1', 'A' should not be present in the code.
+	For the successive commits in 'branch2' to work properly, 'A' should be present in the code.
+	Isn't it obvious that only the features of either 'branch1' or 'branch2' work in the final master commit depending on whose commit is the latest?
