@@ -1,3 +1,23 @@
-Que: When would you want to use a remote repository rather than keeping all your work local?
+Que: When would you want to use a remote repository rather than keeping all your
+work local?
 
-Ans: 
+Ans:
+	1. When sharing my work with others which later can collaboratively modified.
+	2. When teaming up with certain people who share common interests.
+	3. When improving my work with the help of others.
+	4. When merging some part of code of some feature that someone worked elsewhere
+	with my code that is altogether different.
+
+Que: Why might you want to always pull changes manually rather than having Git
+automatically stay up-to-date with your remote repository?
+
+Ans: When we pull a branch, the parent commit of remote branch is joined to the
+tip of the local branch and the tip of the local branch is updated to the tip of
+the remote branch (in local repository).
+We pull a branch from a remote repository that we may be interested to
+contribute. Since we pull remote branches that we wish to continue working with,
+if git is automated to stay up-to-date with a remote repository, the chances are
+that git may pull all branches and update our local repository with all unwanted
+branches that we may not use or work with. That way, manually pulling the changes
+is very reasonable.
+
