@@ -21,3 +21,20 @@ that git may pull all branches and update our local repository with all unwanted
 branches that we may not use or work with. That way, manually pulling the changes
 is very reasonable.
 
+Que: Describe the differences between forks, clones, and branches. When would
+you use one instead of another?
+
+Ans: Fork is used to copy an entire repository from one github user's account 
+to another user's github account. Clone is used to copy a git repository from a
+remote location to a local computer or to make more than one copy in local
+computer. Branch is used to name a commit that branches out from the parent
+branch. The name given to the new branch is updated always to point to the tip of
+the branch everytime the branch gets a new commit.
+
+I use fork when I need to experiment on someone else's repository but don't have
+permission to push my local changes to the remote repository.
+I use clone when I have to copy a remote repository to my local computer or to
+make different copies of a local repository.
+I use branching when I have to work on a new featrue or for I18N that I'm not yet
+sure if it works fine or fits with my production line code properly.
+
