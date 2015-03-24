@@ -38,3 +38,16 @@ make different copies of a local repository.
 I use branching when I have to work on a new featrue or for I18N that I'm not yet
 sure if it works fine or fits with my production line code properly.
 
+Que: What is the benefit of having a copy of the last known state of the remote stored locally?
+
+Ans: We can get a copy of the last known state of the remote repository to our
+local repository using the command "git fetch origin" where 'origin' refers to
+the remote repository locally. Then, "origin/Head" is set to the tip of
+"origin/master" that is recently copied from the remote repository.
+That implies, tip of the remote repository and "origin/HEAD" point to the same
+commit. The merge of "origin/HEAD" to the tip of the local master branch
+doesn't happen when we fetch. And, directly pulling the remote repository's
+latest states may cause conflicts. Remember, "pull = fetch + merge".
+So, first fetching, then analysing and resolving any conflicts that may arise
+and then merging is the best way. That way, 'fetch' is beneficial.
+
