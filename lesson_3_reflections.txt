@@ -51,3 +51,16 @@ latest states may cause conflicts. Remember, "pull = fetch + merge".
 So, first fetching, then analysing and resolving any conflicts that may arise
 and then merging is the best way. That way, 'fetch' is beneficial.
 
+Que: How would you collaborate without using Git or GitHub? What would be
+easier, and what would be harder?
+
+Ans: There are other version control solutions like Perforce, SVN, CVN, etc.
+None of them are distributed version control systems like git. Using one of
+them, we may collaborate with others. If not these, we can use less
+sophisticated Google Docs. Without one of these tools, we just have to sit
+together and work, but, not with the luxury of working remotely.
+Using Git and GitHub is easier but learing how to use takes a little effort.
+Sitting together and working is a good collaborative solution for smaller
+projects but as the scope of the project grows, the collaboration becomes
+tedious and hence it is harder. Moreover, we can't work remotely too.
+
