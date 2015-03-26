@@ -64,3 +64,16 @@ Sitting together and working is a good collaborative solution for smaller
 projects but as the scope of the project grows, the collaboration becomes
 tedious and hence it is harder. Moreover, we can't work remotely too.
 
+Que: When would you want to make changes in a separate branch rather than
+directly in master? What benefits does each approach have?
+
+Ans: I have to make changes in a separate branch when I'm working on a
+collaborative project where a lot of other are involved and I can't
+directly push my changes to the remote master branch. I have to create
+pull request and my changes are to be reviewed by all others involved in
+the project. If I've added others to my venture and I'm the decision maker,
+then I can directly push my changes to the master branch.
+Pushing directly to the master branch is easy but it doesn't let others review
+your recommendations and it is wrong in a collaborative project.
+Pushing through a separate branch is the right way of submitting changes
+as all others are involved to share their opinion, this way.
